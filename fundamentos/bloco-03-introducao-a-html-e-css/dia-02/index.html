@@ -4,22 +4,48 @@
     <meta charset="UTF-8">
     <title>HTML</title>
     <style>
-      h1 {
+      body{
+        font-size: 16px;
+        font-style: oblique;
+        line-height: 50px;
+      }
+      h1{
+        
+        text-align: center;
+        font-family: sans-serif;
         font-size: 65px;
         color: orange;
       }
       .cor {
         background-color: pink;
       }
+      p{
+        font-size: 3em;
+        font-weight: 600;
+      }
+      ul{
+        text-decoration: underline overline;
+        font-size: 2em;
+        text-align: justify;
+      }
+      #amarelo{
+        background-color: rgb(236, 236, 88);
+      }
+      #vermelho{
+        background-color: rgb(117, 23, 23);
+      }
+      #marrom{
+        background-color: rgb(112, 82, 82);
+      }
     </style>
   </head>
   <body>
     <h1>Exercícios 3.2</h1>
     <p class="cor">Qual é a sua cor favorita?</p>
-    <ul class="cor">
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+    <ul>
+      <li id="amarelo">Amarelo</li>
+      <li id="vermelho">Vermelho</li>
+      <li id="marrom">Marrom</li>
     </ul>
   </body>
 </html>
