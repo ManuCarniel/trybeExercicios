@@ -97,3 +97,4 @@ switch (chessPiece.toLocaleLowerCase()){
         console.log('Essa peça não pertence ao Xadrez');
         break    
 }
+
