@@ -63,33 +63,12 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-  const expectedResult = [
-    {
-      id: 6,
-      name: 'O Chamado de Cthulhu',
-      genre: 'Terror',
-      author: { name: 'H. P. Lovecraft', birthYear: 1890 },
-      releaseYear: 1928,
-    },
-    {
-      id: 3,
-      name: 'Fundação',
-      genre: 'Ficção Científica',
-      author: { name: 'Isaac Asimov', birthYear: 1920 },
-      releaseYear: 1951,
-    },
-    {
-      id: 2,
-      name: 'O Senhor dos Anéis',
-      genre: 'Fantasia',
-      author: { name: 'J. R. R. Tolkien', birthYear: 1892 },
-      releaseYear: 1954,
-    },
-  ];
-  
-  function oldBooksOrdered() {
-    const oldBooks = books.filter((book) => book.releaseYear + 60 <= 2021 );
-    return oldBooks.sort((bookA, bookB) => bookB - bookA);
+  const expectedResult = 'O Senhor dos Anéis';
+
+  function authorWith3DotsOnName() {
+    return books.find((book) => book.author.name[1] === '.' &&
+        book.author.name[4] === '.' &&
+        book.author.name[7] === '.').name;
   }
 
-  console.log(oldBooksOrdered());
+  console.log(authorWith3DotsOnName());
