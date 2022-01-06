@@ -5,7 +5,11 @@ const arrays = [
   ];
   
   function flatten() {
-        return arrays.reduce((acc, curr) => acc.concat(curr), []);
+        return arrays.reduce((acc, curr) => { 
+            console.log(`é o acumulador ${acc}`);
+            console.log(`é o valor atual ${curr}`);
+            return acc.concat(curr);
+        });
   }
 
   console.log(flatten());
